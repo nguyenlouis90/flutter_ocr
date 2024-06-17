@@ -1,16 +1,63 @@
-# flutter_ocr
+[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
+![Dart Version](https://img.shields.io/static/v1?label=dart&message=3.4.1&color=00579d)
+![Flutter Version](https://img.shields.io/static/v1?label=flutter&message=3.22.16&color=42a5f5)
+![Null Safety](https://img.shields.io/static/v1?label=null-safety&message=done&color=success)
 
-A new Flutter project.
+# **📃 Flutter OCR**
 
-## Getting Started
+## 📃 Sobre
 
-This project is a starting point for a Flutter application.
+Projeto criado para demonstrar o processo de criação de uma OCR (Optical Character Recognition) utilizando Flutter e o pacote Google's ML Kit Text Recognition.
 
-A few resources to get you started if this is your first Flutter project:
+Você pode ver o tutorial completo em: [Flutter Projects for Beginners #05: Building an Optical Character Recognition (OCR) App](https://docs.flutter.dev/get-started/install)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Screenshots
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p align="middle">
+    <img src="#" width="70%">
+</p>
+
+## 🚀 Configurando para Utilizar
+
+### Instalação Flutter
+
+
+Para iniciar o projeto antes de mais nada certifique-se que o Flutter SDK está instalado e configurado corretamente em sua máquina e que está usando a versão mais recente. 
+
+É possível fazer essa verificação utilizando o comando abaixo:
+```
+flutter doctor
+```
+Caso você não possua o Flutter instalado a [Documentação Oficial](https://docs.flutter.dev/get-started/install) oferece instruções detalhas de como fazer todas as configurações necessárias.
+
+### Inicializando o Projeto
+
+
+Atraves do terminal, faça o clone do repositorio em uma pasta usando o comando:
+
+```
+git clone https://github.com/FroJhoDev/FlutterSimpleHabit.git
+```
+Acesse a pasta com o comando:
+
+```
+cd FlutterSimpleHabit
+```
+
+Faça a instalação dos pacotes nescesarios:
+```
+flutter pub get
+```
+Abra o projeto útilizando o comando:
+```
+code .
+```
+
+
+---
+
+> ## Packages and Tools
+* Flutter
+* Cupertino Icons
+* Google's ML Kit Text Recognition
+* Image Picker
