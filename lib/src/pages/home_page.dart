@@ -1,9 +1,9 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_ocr/src/widgets/picker_option_widget.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:image_cropper/image_cropper.dart';
-import 'package:flutter_ocr/src/widgets/picker_option_widget.dart';
 import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart';
 
 class HomePage extends StatefulWidget {
@@ -93,6 +93,17 @@ class _HomePageState extends State<HomePage> {
     setState(() => _extractedText = recognizedText);
   }
 
+  /// Copy the content from [_extractedText] to clip board and show a snackbar alert
+  void _copyToClipBoard() {
+    Clipboard.setData(ClipboardData(text: _extractedText));
+
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Text('Copied to Clipboard'),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -146,15 +157,7 @@ class _HomePageState extends State<HomePage> {
                     style: TextStyle(fontSize: 22.0),
                   ),
                   IconButton(
-                    onPressed: () {
-                      Clipboard.setData(ClipboardData(text: _extractedText));
-
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
-                          content: Text('Copied to Clipboard'),
-                        ),
-                      );
-                    },
+                    onPressed: _copyToClipBoard,
                     icon: const Icon(Icons.copy),
                   )
                 ],
