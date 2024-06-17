@@ -14,7 +14,7 @@ Você pode ver o tutorial completo em: [Flutter Projects for Beginners #05: Buil
 ### Screenshots
 
 <p align="middle">
-    <img src="#" width="70%">
+    <img src="https://github.com/FroJhoDev/flutter_ocr/blob/main/assets/images/frojho_dev_flutter_ocr.gif" width="70%">
 </p>
 
 ## 🚀 Configurando para Utilizar
@@ -36,12 +36,12 @@ Caso você não possua o Flutter instalado a [Documentação Oficial](https://do
 Atraves do terminal, faça o clone do repositorio em uma pasta usando o comando:
 
 ```
-git clone https://github.com/FroJhoDev/FlutterSimpleHabit.git
+git clone https://github.com/FroJhoDev/flutter_ocr.git
 ```
 Acesse a pasta com o comando:
 
 ```
-cd FlutterSimpleHabit
+cd flutter_ocr
 ```
 
 Faça a instalação dos pacotes nescesarios:
@@ -53,7 +53,6 @@ Abra o projeto útilizando o comando:
 code .
 ```
 
-
 ---
 
 > ## Packages and Tools
@@ -61,3 +60,4 @@ code .
 * Cupertino Icons
 * Google's ML Kit Text Recognition
 * Image Picker
+* Image Cropper
